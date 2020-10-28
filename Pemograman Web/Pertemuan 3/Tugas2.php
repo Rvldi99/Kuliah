@@ -1,7 +1,12 @@
+<!-- Nama   : Rivaldi Nazar Yuniar -->
+<!-- NIM    : 17190659 -->
+<!-- Kelas  : 17.3E.07 -->
+<!-- Matkul : Web Programming I Pert Ke-3 -->
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tugas Phpin Orang Pert-3</title>
+	<title>Web Programming I Pert Ke-3</title>
 </head>
 <body>
 <?php 
