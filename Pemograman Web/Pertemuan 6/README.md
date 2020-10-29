@@ -1,6 +1,6 @@
 #Tugas Pertemuan Ke-6
 
-Membuat Form input percabangan
+Input percabangan
 
 Input : Masukkan Angka "0 sampai 99999"
 
