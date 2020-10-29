@@ -5,7 +5,10 @@ Membuat Form input percabangan
 Input : Masukkan Angka "0 sampai 99999"
 
 Jika input dari 0 sampai 9
+
 = Tampil "Satuan"
+
+
 Lain jika dari 10 sampai 99
 = Tampil "Puluhan"
 Lain jika dari 100 sampai 999
