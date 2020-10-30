@@ -1,89 +1,103 @@
+
+<!-- Nama   : Rivaldi Nazar Yuniar -->
+<!-- NIM    : 17190659 -->
+<!-- Kelas  : 17.3E.07 -->
+<!-- Matkul : Web Programming I Pert Ke-6 -->
+
 <?php
     error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
 
-    $Nama  = "Rivaldi Nazar Yuniar";
-    $Nim   = "17190659";
-    $Kelas = "17.3E.07";
+    $nilai1 = $_GET['nilai1'];
+    $nilai2 = $_GET['nilai2'];
+    $rumus  = $_GET['rumus'];
 
-	$input = $_GET['input'];
-
-    if ($input >= "0" && $input <= "9")
+    if($rumus == 'Luas Segitiga')
     {
-        $output = "Satuan";
+    	if($nilai1 != 0 && $nilai2 != 0)
+    	{
+    		$output = 1/2 * ($nilai1 * $nilai2);
+    	}
+    	else
+    	{
+    		$output = "Tidak ada hasil";
+    	}
     }
-    else if($input >= "10" && $input <= "99")
+    else if($rumus == 'Luas Persegi')
     {
-        $output = "Puluhan";
+    	if($nilai1 != 0 && $nilai2 != 0)
+    	{
+    	    $output = $nilai1 * $nilai2;
+        }
+    	else
+    	{
+    		$output = "Tidak ada hasil";
+    	}
     }
-    else if($input >= "100" && $input <= "999")
-    {
-        $output = "Ratusan";
-    }
-    else if($input >= "1000" && $input <= "9999")
-    {
-        $output = "Ribuan";
-    }
-    else if($input >= "10000" && $input <= "99999")
-    {
-        $output = "Puluhribuan";
-    }     
-	?>
-
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<style>	
-	    table {
-	    	padding-left: 40px; 
-	    }	
-		body {
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-            background: #34495e;
-        }
-        td {
-        	color: white;
-        	font-family: 
-        }
-        h2 {
-        	text-transform: uppercase;
-        	color: white;
-        	font-weight: 500;
-        	padding-left: 40px; 
-        }
-        </style>
-	<title>Percabangan</title>
+	<style>
+		.IO{
+			background-color: white;
+			color: black;
+		}
+		body{
+			background-color: #244484;
+		}
+		table{
+			margin: auto;
+			border-color: #1d2a44;
+			text-align: center;
+			background-color: #1d2a44;
+			color: white;
+			font-family: sans-serif;
+			border-radius: 5px;
+		    top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+		}
+	</style>
+	<title>Rumus Segitiga & Persegi</title>
 </head>
 <body>
-	<h2>PEMOGRAMAN WEB PERT KE-6</h2>
 	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
-	<table>
+	<table border="1">
 		<tr>
-			<td>Nama</td>
-		    <td>:</td>
-		    <td><?php echo $Nama?></td>
+			<td colspan="2">RUMUS</td>
+		</tr>
+		<tr>
+			<td>Nilai 1</td>
+			<td><input type="textbox" name="nilai1" placeholder="Input Nilai 1" ></td>
+		</tr>
+		<tr>
+			<td>Nilai 2</td>
+			<td><input type="textbox" name="nilai2" placeholder="Input Nilai 2"></td>
+		</tr>
+		<tr>
+			<td>Rumus</td>
+			<td><input type="radio" name="rumus" value="Luas Segitiga">Luas Segitiga <br><input type="radio" name="rumus" value="Luas Persegi">Luas Persegi</td>
+		</tr>
+		<tr>
+	        <td colspan="2"><input type="submit" name="submit" value="submit & reset"></td>
 	    </tr>
 	    <tr>
-			<td>Nim</td>
-		    <td>:</td>
-		    <td><?php echo $Nim?></td>
+	    <tr>
+	    	<td>Rumus</td>
+	    	<td class="IO"><?php echo $rumus ?></td>
 	    </tr>
 	    <tr>
-			<td>Kelas</td>
-		    <td>:</td>
-		    <td><?php echo $Kelas?></td>
+	    	<td>Nilai 1</td>
+	    	<td class="IO"><?php echo $nilai1 ?></td>
 	    </tr>
 	    <tr>
-	        <td>Input</td>
-	        <td>:</td>
-	        <td><input type="textbox" name="input" placeholder="Masukkan Angka 0 - 99999" required></td>
-	        <td><input type="submit" name="kirim" value="Confirm"></td>
+	    	<td>Nilai 2</td>
+	    	<td class="IO"><?php echo $nilai2 ?></td>
 	    </tr>
 	    <tr>
-            <td>Ouput</td>
-            <td>:</td>
-            <td><?php echo $output ?></td>
+	    	<td>Hasil</td>
+	    	<td class="IO"><?php echo $output ?></td>
 	    </tr>
 	</table>
     </form>
