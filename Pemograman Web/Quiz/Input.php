@@ -44,7 +44,7 @@
 		</tr>
 		<tr>
 			<td style="text-indent: 3px;">Golongan Penjabat</td>
-			<td><input type="radio" name="type" value="1">1<input type="radio" name="type" value="2">2<input type="radio" name="type" value="3">3</td>
+			<td><input type="radio" name="type" value="1">1<input type="radio" name="type" value="2">2<input type="radio" name="type" value="3">3</input></td>
 		</tr>
 		<tr>
 			<td style="text-indent: 3px;">Pendidikan</td>
@@ -57,8 +57,8 @@
 	</table>
 	<table align="center">
 		<tr>
-			<td><input type="Submit" name="Submit" value="Submit"></td>
-			<td><input type="Reset" name="Reset" value="Reset"></td>
+			<td><input type="Submit" name="Submit" value="Submit"></input></td>
+			<td><input type="Reset" name="Reset" value="Reset"></input></td>
 		</tr>
 	</table>
 	</form>
