@@ -48,7 +48,7 @@
 		</tr>
 		<tr>
 			<td style="text-indent: 3px;">Pendidikan</td>
-			<td><select class="size" name="pendidikan"><option value="-Pilih-">-PILIH-</option><option value="SMA/SMK">SMA/SMK</option value="D1"><option>D1</option><option value="D2">D2</option><option value="S1">S1</option><option value="S2">S2</option></td>
+			<td><select class="size" name="pendidikan"><option value="-Pilih-">-PILIH-</option><option value="SMA/SMK">SMA/SMK</option><option value="D1">D1</option><option value="D2">D2</option><option value="S1">S1</option><option value="S2">S2</option></td>
 		</tr>
 		<tr>
 			<td style="text-indent: 3px;">Jumlah Jam Kerja</td>
