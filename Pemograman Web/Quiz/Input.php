@@ -44,7 +44,7 @@
 		</tr>
 		<tr>
 			<td style="text-indent: 3px;">Golongan Penjabat</td>
-			<td><input type="radio" name="type" value="1">1<input type="radio" name="type" value="2">2<input type="radio" name="type" value="3">3</input></td>
+			<td><input type="radio" name="type" value="1">1<input type="radio" name="type" value="2">2<input type="radio" name="type" value="3">3</td>
 		</tr>
 		<tr>
 			<td style="text-indent: 3px;">Pendidikan</td>
@@ -52,13 +52,13 @@
 		</tr>
 		<tr>
 			<td style="text-indent: 3px;">Jumlah Jam Kerja</td>
-			<td><input style="width: 173px" type="textbox" name="jam" placeholder="Input Jam Kerja" required></input></td>
+			<td><input style="width: 173px" type="textbox" name="jam" placeholder="Input Jam Kerja" required></td>
 		</tr>
 	</table>
 	<table align="center">
 		<tr>
-			<td><input type="Submit" name="Submit" value="Submit"></input></td>
-			<td><input type="Reset" name="Reset" value="Reset"></input></td>
+			<td><input type="Submit" name="Submit" value="Submit"></td>
+			<td><input type="Reset" name="Reset" value="Reset"></td>
 		</tr>
 	</table>
 	</form>
