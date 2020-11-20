@@ -52,7 +52,7 @@
 		</tr>
 		<tr>
 			<td style="text-indent: 3px;">Jumlah Jam Kerja</td>
-			<td><input style="width: 173px" type="textbox" name="jam" placeholder="Input Jam Kerja" required></td>
+			<td><input style="width: 173px" type="textbox" name="jam" placeholder="Input Jam Kerja" required></input></td>
 		</tr>
 	</table>
 	<table align="center">
