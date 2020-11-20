@@ -40,7 +40,7 @@
 		</tr>
 		<tr>
 			<td style="text-indent: 3px;">Nama</td>
-			<td><input style="width: 173px" type="textbox" name="nama" placeholder="Input Nama" required></td>
+			<td><input style="width: 173px" type="textbox" name="nama" placeholder="Input Nama" required></input></td>
 		</tr>
 		<tr>
 			<td style="text-indent: 3px;">Golongan Penjabat</td>
